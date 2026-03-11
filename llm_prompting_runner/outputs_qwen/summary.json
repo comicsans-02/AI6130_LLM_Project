@@ -1,0 +1,72 @@
+[
+  {
+    "BLEU": 0.4084,
+    "Token-Level Accuracy": 0.0062,
+    "SemanticSimilarity": 0.9174,
+    "BERTScoreF1": 0.6536,
+    "METEOR": 0.7788,
+    "BiasRetentionRate": 0.9614,
+    "BiasPhraseRetentionRate": 0.8033,
+    "OverEditRate": 0.1831,
+    "n": 18150,
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "strategy": "zero_shot",
+    "NoBiasReductionCount": 9007
+  },
+  {
+    "BLEU": 0.5855,
+    "Token-Level Accuracy": 0.0275,
+    "SemanticSimilarity": 0.9336,
+    "BERTScoreF1": 0.7485,
+    "METEOR": 0.8513,
+    "BiasRetentionRate": 0.9754,
+    "BiasPhraseRetentionRate": 0.8999,
+    "OverEditRate": 0.0885,
+    "n": 18150,
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "strategy": "few_shot",
+    "NoBiasReductionCount": 10544
+  },
+  {
+    "BLEU": 0.4388,
+    "Token-Level Accuracy": 0.0044,
+    "SemanticSimilarity": 0.9009,
+    "BERTScoreF1": 0.6479,
+    "METEOR": 0.7739,
+    "BiasRetentionRate": 0.9516,
+    "BiasPhraseRetentionRate": 0.7817,
+    "OverEditRate": 0.1567,
+    "n": 18150,
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "strategy": "with_bias_tags",
+    "NoBiasReductionCount": 8151
+  },
+  {
+    "BLEU": 0.4096,
+    "Token-Level Accuracy": 0.0075,
+    "SemanticSimilarity": 0.9185,
+    "BERTScoreF1": 0.6553,
+    "METEOR": 0.7797,
+    "BiasRetentionRate": 0.9614,
+    "BiasPhraseRetentionRate": 0.8028,
+    "OverEditRate": 0.1781,
+    "n": 18150,
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "strategy": "npov",
+    "NoBiasReductionCount": 8970
+  },
+  {
+    "BLEU": 0.3772,
+    "Token-Level Accuracy": 0.0014,
+    "SemanticSimilarity": 0.9098,
+    "BERTScoreF1": 0.6266,
+    "METEOR": 0.7647,
+    "BiasRetentionRate": 0.9625,
+    "BiasPhraseRetentionRate": 0.8019,
+    "OverEditRate": 0.2115,
+    "n": 18150,
+    "model": "qwen/qwen-2.5-7b-instruct",
+    "strategy": "self_refine",
+    "NoBiasReductionCount": 9239
+  }
+]

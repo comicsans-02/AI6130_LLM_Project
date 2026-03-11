@@ -1,0 +1,11 @@
+torch
+numpy
+sacrebleu
+sentence-transformers
+transformers
+scikit-learn
+openai
+tokenizers
+bert-score
+nltk
+tqdm

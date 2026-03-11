@@ -1,0 +1,6 @@
+BLEU,Token-Level Accuracy,SemanticSimilarity,BERTScoreF1,METEOR,BiasRetentionRate,BiasPhraseRetentionRate,OverEditRate,n,model,strategy,NoBiasReductionCount
+0.2928,0.0001,0.8874,0.5854,0.6972,0.9542,0.7052,0.3199,18150,meta-llama/llama-3-8b-instruct,zero_shot,8816
+0.6225,0.0386,0.9212,0.7852,0.7957,0.9667,0.8195,0.1413,18150,meta-llama/llama-3-8b-instruct,few_shot,9586
+0.4371,0.0,0.8912,0.623,0.7741,0.9619,0.7941,0.1781,18150,meta-llama/llama-3-8b-instruct,with_bias_tags,9285
+0.293,0.0001,0.8882,0.5861,0.6979,0.954,0.7062,0.3188,18150,meta-llama/llama-3-8b-instruct,npov,8831
+0.2654,0.0,0.8604,0.5513,0.6835,0.9601,0.7404,0.4872,18150,meta-llama/llama-3-8b-instruct,self_refine,9954

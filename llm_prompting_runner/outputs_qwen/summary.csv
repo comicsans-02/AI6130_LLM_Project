@@ -1,0 +1,6 @@
+BLEU,Token-Level Accuracy,SemanticSimilarity,BERTScoreF1,METEOR,BiasRetentionRate,BiasPhraseRetentionRate,OverEditRate,n,model,strategy,NoBiasReductionCount
+0.4084,0.0062,0.9174,0.6536,0.7788,0.9614,0.8033,0.1831,18150,qwen/qwen-2.5-7b-instruct,zero_shot,9007
+0.5855,0.0275,0.9336,0.7485,0.8513,0.9754,0.8999,0.0885,18150,qwen/qwen-2.5-7b-instruct,few_shot,10544
+0.4388,0.0044,0.9009,0.6479,0.7739,0.9516,0.7817,0.1567,18150,qwen/qwen-2.5-7b-instruct,with_bias_tags,8151
+0.4096,0.0075,0.9185,0.6553,0.7797,0.9614,0.8028,0.1781,18150,qwen/qwen-2.5-7b-instruct,npov,8970
+0.3772,0.0014,0.9098,0.6266,0.7647,0.9625,0.8019,0.2115,18150,qwen/qwen-2.5-7b-instruct,self_refine,9239

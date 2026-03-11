@@ -1,0 +1,72 @@
+[
+  {
+    "BLEU": 0.2928,
+    "Token-Level Accuracy": 0.0001,
+    "SemanticSimilarity": 0.8874,
+    "BERTScoreF1": 0.5854,
+    "METEOR": 0.6972,
+    "BiasRetentionRate": 0.9542,
+    "BiasPhraseRetentionRate": 0.7052,
+    "OverEditRate": 0.3199,
+    "n": 18150,
+    "model": "meta-llama/llama-3-8b-instruct",
+    "strategy": "zero_shot",
+    "NoBiasReductionCount": 8816
+  },
+  {
+    "BLEU": 0.6225,
+    "Token-Level Accuracy": 0.0386,
+    "SemanticSimilarity": 0.9212,
+    "BERTScoreF1": 0.7852,
+    "METEOR": 0.7957,
+    "BiasRetentionRate": 0.9667,
+    "BiasPhraseRetentionRate": 0.8195,
+    "OverEditRate": 0.1413,
+    "n": 18150,
+    "model": "meta-llama/llama-3-8b-instruct",
+    "strategy": "few_shot",
+    "NoBiasReductionCount": 9586
+  },
+  {
+    "BLEU": 0.4371,
+    "Token-Level Accuracy": 0.0,
+    "SemanticSimilarity": 0.8912,
+    "BERTScoreF1": 0.623,
+    "METEOR": 0.7741,
+    "BiasRetentionRate": 0.9619,
+    "BiasPhraseRetentionRate": 0.7941,
+    "OverEditRate": 0.1781,
+    "n": 18150,
+    "model": "meta-llama/llama-3-8b-instruct",
+    "strategy": "with_bias_tags",
+    "NoBiasReductionCount": 9285
+  },
+  {
+    "BLEU": 0.293,
+    "Token-Level Accuracy": 0.0001,
+    "SemanticSimilarity": 0.8882,
+    "BERTScoreF1": 0.5861,
+    "METEOR": 0.6979,
+    "BiasRetentionRate": 0.954,
+    "BiasPhraseRetentionRate": 0.7062,
+    "OverEditRate": 0.3188,
+    "n": 18150,
+    "model": "meta-llama/llama-3-8b-instruct",
+    "strategy": "npov",
+    "NoBiasReductionCount": 8831
+  },
+  {
+    "BLEU": 0.2654,
+    "Token-Level Accuracy": 0.0,
+    "SemanticSimilarity": 0.8604,
+    "BERTScoreF1": 0.5513,
+    "METEOR": 0.6835,
+    "BiasRetentionRate": 0.9601,
+    "BiasPhraseRetentionRate": 0.7404,
+    "OverEditRate": 0.4872,
+    "n": 18150,
+    "model": "meta-llama/llama-3-8b-instruct",
+    "strategy": "self_refine",
+    "NoBiasReductionCount": 9954
+  }
+]
