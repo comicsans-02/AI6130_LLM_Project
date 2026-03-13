@@ -9,10 +9,15 @@ the Claude-specific runner.
 import argparse
 import csv
 import json
+import os
 import random
 import subprocess
 import threading
 import time
+
+# Claude CLI refuses to run inside a Claude Code session (CLAUDECODE env var).
+# Strip it so subprocess calls work when launched from within Claude Code.
+_SUBPROCESS_ENV = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Dict, List, Tuple
@@ -135,6 +140,7 @@ def call_claude(prompt: str, model: str, retries: int = 3) -> str:
                 capture_output=True,
                 text=True,
                 timeout=120,
+                env=_SUBPROCESS_ENV,
             )
             if result.returncode == 0 and result.stdout.strip():
                 return result.stdout.strip()
