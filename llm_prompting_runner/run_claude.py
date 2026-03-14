@@ -14,13 +14,13 @@ import random
 import subprocess
 import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
+from pathlib import Path
+from typing import Dict, List, Tuple
 
 # Claude CLI refuses to run inside a Claude Code session (CLAUDECODE env var).
 # Strip it so subprocess calls work when launched from within Claude Code.
 _SUBPROCESS_ENV = {k: v for k, v in os.environ.items() if k != "CLAUDECODE"}
-from concurrent.futures import ThreadPoolExecutor
-from pathlib import Path
-from typing import Dict, List, Tuple
 
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -134,11 +134,13 @@ def call_claude(prompt: str, model: str, retries: int = 3) -> str:
     """Call the ``claude`` CLI and return the stripped stdout."""
     delay = 5.0
     for attempt in range(retries):
+        result = None
         try:
             result = subprocess.run(
                 ["claude", "-p", prompt, "--model", model],
                 capture_output=True,
                 text=True,
+                encoding="utf-8",
                 timeout=120,
                 env=_SUBPROCESS_ENV,
             )
