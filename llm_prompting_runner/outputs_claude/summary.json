@@ -28,6 +28,20 @@
     "strategy": "npov"
   },
   {
+    "BLEU": 0.4265,
+    "Token-Level Accuracy": 0.014,
+    "SemanticSimilarity": 0.9086,
+    "BERTScoreF1": 0.6448,
+    "METEOR": 0.7679,
+    "BiasRetentionRate": 0.935,
+    "BiasPhraseRetentionRate": 0.7728,
+    "OverEditRate": 0.2606,
+    "NoBiasReductionCount": 175,
+    "n": 500,
+    "model": "haiku",
+    "strategy": "self_refine"
+  },
+  {
     "BLEU": 0.3419,
     "Token-Level Accuracy": 0.002,
     "SemanticSimilarity": 0.9014,
