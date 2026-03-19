@@ -56,6 +56,20 @@
     "strategy": "zero_shot"
   },
   {
+    "BLEU": 0.786,
+    "Token-Level Accuracy": 0.16,
+    "SemanticSimilarity": 0.9499,
+    "BERTScoreF1": 0.8624,
+    "METEOR": 0.8635,
+    "BiasRetentionRate": 0.9699,
+    "BiasPhraseRetentionRate": 0.8595,
+    "OverEditRate": 0.0615,
+    "NoBiasReductionCount": 23,
+    "n": 50,
+    "model": "opus",
+    "strategy": "few_shot"
+  },
+  {
     "BLEU": 0.4329,
     "Token-Level Accuracy": 0.0,
     "SemanticSimilarity": 0.9312,
@@ -68,6 +82,20 @@
     "n": 50,
     "model": "opus",
     "strategy": "npov"
+  },
+  {
+    "BLEU": 0.3535,
+    "Token-Level Accuracy": 0.0,
+    "SemanticSimilarity": 0.9211,
+    "BERTScoreF1": 0.6271,
+    "METEOR": 0.7396,
+    "BiasRetentionRate": 0.9446,
+    "BiasPhraseRetentionRate": 0.7298,
+    "OverEditRate": 0.2068,
+    "NoBiasReductionCount": 15,
+    "n": 50,
+    "model": "opus",
+    "strategy": "with_bias_tags"
   },
   {
     "BLEU": 0.427,
